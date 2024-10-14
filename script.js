@@ -1,6 +1,5 @@
-const hodinovka = 300
-const pocetHodin = Number (prompt("Zadej počet hodin zaměstnance", "160"))
-const premie = Number (prompt("Zadej mimořádnou odměnu v Kč", "10000"))
-const plat = (hodinovka * pocetHodin) + premie
+const start = Number (15)
+const delka = Number (prompt ("Zadej, jak dlouho jsi běžel:", "10"))
+const konec = (start + delka) % 24
 
-document.body.innerHTML += "<p> Pepa Novák si vydělal: " + plat + " Kč. </p>"
+document.body.innerHTML += "<p> Závod jsi doběhl v " + konec + " hodiny ráno. </p>"
